@@ -1,0 +1,84 @@
+{
+    "sampleData": [
+      {
+        "id": "1",
+        "song_name": "Bekhayali",
+        "album_name": "Kabir Singh",
+        "lyric_text": "Bekhayali mein bhi tera hi khayal aaye..",
+        "upvote": 0,
+        "downvote": 0
+      },
+      {
+        "id": "2",
+        "song_name": "Bloom",
+        "album_name": "Kabir Singh",
+        "lyric_text": "Bekhayali mein bhi tera hi khayal aaye..",
+        "upvote": 0,
+        "downvote": 0
+      },
+      {
+        "id": "3",
+        "song_name": "Feral",
+        "album_name": "Kabir Singh",
+        "lyric_text": "Bekhayali mein bhi tera hi khayal aaye..",
+        "upvote": 0,
+        "downvote": 0
+      },
+      {
+        "id": "4",
+        "song_name": "Lotus Flower",
+        "album_name": "Kabir Singh",
+        "lyric_text": "Bekhayali mein bhi tera hi khayal aaye..",
+        "upvote": 0,
+        "downvote": 0
+      },
+      {
+        "id": "5",
+        "song_name": "Thodi Der",
+        "album_name": "Kabir Singh",
+        "lyric_text": "Bekhayali mein bhi tera hi khayal aaye..",
+        "upvote": 0,
+        "downvote": 0
+      },
+      {
+        "id": "6",
+        "song_name": "Tere Bin Kive",
+        "album_name": "Kabir Singh",
+        "lyric_text": "Bekhayali mein bhi tera hi khayal aaye..",
+        "upvote": 0,
+        "downvote": 0
+      },
+      {
+        "id": "7",
+        "song_name": "Tum Se",
+        "album_name": "Kabir Singh",
+        "lyric_text": "Bekhayali mein bhi tera hi khayal aaye..",
+        "upvote": 0,
+        "downvote": 0
+      },
+      {
+        "id": "8",
+        "song_name": "Dilbar Dilbar",
+        "album_name": "Kabir Singh",
+        "lyric_text": "Bekhayali mein bhi tera hi khayal aaye..",
+        "upvote": 0,
+        "downvote": 0
+      },
+      {
+        "id": "9",
+        "song_name": "Teri Galli",
+        "album_name": "Barbie Maan",
+        "lyric_text": "Bekhayali mein bhi tera hi khayal aaye..",
+        "upvote": 0,
+        "downvote": 0
+      },
+      {
+        "id": "10",
+        "song_name": "Tenu Vekhi Jaavan",
+        "album_name": "Kabir Singh",
+        "lyric_text": "Bekhayali mein bhi tera hi khayal aaye..",
+        "upvote": 0,
+        "downvote": 0
+      }
+    ]
+  }
