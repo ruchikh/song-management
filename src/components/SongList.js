@@ -26,26 +26,6 @@ class SongList extends Component {
 		}))
 	}
 
-	removeData = id => {
-		const { songData } = this.state;
-		let dataLists = songData.filter(data => {
-			return data.id !== id;
-		});
-
-		this.setState({
-			songData: dataLists,
-		});
-	};
-
-	reset = () => {
-		this.setState({
-			song_name: "",
-			album_name: "",
-			lyric_text: ""
-		});
-	};
-
-
 	addData = e => {
 		e.preventDefault();
 		const { song_name, album_name, lyric_text } = this.state;
@@ -68,13 +48,32 @@ class SongList extends Component {
 		this.reset();
 	};
 
+	removeData = id => {
+		const { songData } = this.state;
+		let dataLists = songData.filter(data => {
+			return data.id !== id;
+		});
+
+		this.setState({
+			songData: dataLists,
+		});
+	};
+
+	reset = () => {
+		this.setState({
+			song_name: "",
+			album_name: "",
+			lyric_text: ""
+		});
+	};
+
 	handleChange = e => {
 		this.setState({
 			[e.target.name]: e.target.value
 		});
 	};
 
-
+	// search by song_name
 	handleSearchChange = value => {
 		const lowercasedValue = value.toLowerCase();
 
