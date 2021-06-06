@@ -56,7 +56,5 @@ button {
 }
 
 .search-bar {
-  width: 50% !important;
-  margin: 20px auto;
-
+  margin: 20px 0;
 }

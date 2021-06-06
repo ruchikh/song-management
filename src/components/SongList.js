@@ -164,6 +164,27 @@ class SongList extends Component {
 		);
 	};
 
+	handlesSorting = (sort) => {
+		const sortData = this.state.songData.slice();
+    if (sort !== "") {
+      sortData.sort((a, b) =>
+        sort === "a-z"
+          ? a.song_name > b.song_name
+            ? 1
+            : -1
+          : a.song_name < b.song_name
+          ? 1
+          : -1
+      );
+    } else {
+      sortData.sort((a, b) => (a.id > b.id ? 1 : -1));
+    }
+
+		this.setState({
+			songData: sortData
+		})
+	}
+
 	render() {
 		const {songData, isEditing, id} = this.state;
 
@@ -176,7 +197,26 @@ class SongList extends Component {
 					{isEditing ? <button className="add-button" onClick={(e) => this.saveUpdate(e, id)}>Save <SaveIcon /></button>
 						: <button className="add-button" onClick={(e) => this.addData(e)}>Add <AddIcon /></button>
 					}
-					<Input type="text" placeholder="Search" className="search-bar" onChange={(e) => this.handleSearchChange(e.target.value)}/>
+					<Row>
+						<Col lg={8}>
+							<Input type="text" placeholder="Search" className="search-bar" onChange={(e) => this.handleSearchChange(e.target.value)}/>
+						</Col>
+						<Col lg={4}>
+							<select
+								className="search-bar"
+								value={this.props.sort}
+								onChange={(event) => {
+									this.handlesSorting(
+										event.target.value
+									);
+								}}
+							>
+								<option value="">Select</option>
+								<option value="a-z">A-Z</option>
+								<option value="z-a">Z-A</option>
+							</select>
+						</Col>
+					</Row>
 					{songData && songData.map((item, i) => {
 						const {song_name, album_name, id, upvote, downvote, lyric_text } = item;
 						return (
